@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!---==Title===------------>
+    <title>Our Packages</title>
+    
+    <!---==Stykesheet===------->
+    <link rel="stylesheet" href="packages.css">
+
+    <!--==Shortcut Icon===-->
+    <link rel="shortcut icon" href="img/Logo.png">
+
+    <!---==Using Google Fonts===------->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+
+    <!--==Using Remix Icons===-------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+   
+</head>
+<body>
+
+  <!----==Banner Section===---->
+  <section id="banner"">
+    <!---logo----------->
+    <a href="index.html"><img src="img/Logo.png" class="logo"></a>
+
+    <div class="banner-text">
+        <h1>Our Packages</h1> 
+       
+        </div>
+    </div>
+ </section>
+
+ <!--Side Navigation----->
+ <section>
+     <!--menu----------->
+     <div id="sideNav">
+         <nav>
+             <ul>
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="index.html#features">FEATURES</a></li> 
+                 <li><a href="about us.html">ABOUT US</a></li>
+                 <li><a href="index.html#testimonials">TESTIMONIALS</a></li>
+                 <li><a href="contact.html">CONTACT US</a></li>
+             </ul>
+         </nav>
+     </div>
+     <div id="menuBtn">
+        <img src="img/menu-line.png" id="menu">
+     </div>
+ </section>
+
+<!---Package Section-->
+<section class="packages" id="packages">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Id pariatur rerum ut! Soluta odit voluptas vel officiis at! Dolor pariatur, nisi est blanditiis placeat ad labore.
+         Repellat laudantium omnis mollitia dolores! Nulla quam cum corrupti?</p>
+
+         <div class="column-container">
+            <div class="row-1">
+                <div class="row-container-1">
+                    <div class="img-row"><img src="img/package 1.jpg"></div>
+                    <div class="info-row">
+                        <div class="info-row-h1">
+                            <h1>Begginer Package</h1>
+                        </div>
+                        <div class="info-row-p">
+                            <p>Standard weekly recipes.<br> 1 bake at home set.<br> 10% off nutritional information app.<br> 10% off one special occasion gift box.</p>
+                        </div>
+                        <a href="#" class="btn">START COOKING</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-container">
+                <div class="row-2">
+                    <div class="row-container-2">
+                        <div class="img-row"><img src="img/package 2.jpg"></div>
+                        <div class="info-row">
+                            <div class="info-row-h1">
+                                <h1>Everyday Package</h1>
+                            </div>
+                            <div class="info-row-p">
+                                <p>35 weekly recipes to choose from.<br> 3 bake at home set.<br> 1 free special occassion gift box.</p>
+                            </div>
+                            <a href="#" class="btn">START COOKING</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-container">
+                    <div class="row-3">
+                        <div class="row-container-3">
+                            <div class="img-row"><img src="img/Delluxe.jpg"></div>
+                            <div class="info-row">
+                                <div class="info-row-h1">
+                                    <h1>Deluxe Package</h1>
+                                </div>
+                                <div class="info-row-p">
+                                    <p>50 weekly recipes to choose from.<br> 5 bake at home sets.<br> Free nutrition app information. <br> 3 free special occasion gift box.</p>
+                                </div>
+                                <a href="#" class="btn">START COOKING</a>
+                            </div>
+                        </div>
+                    </div>
+
+            <div class="column-container">
+                        <div class="row-4">
+                            <div class="row-container-4">
+                                <div class="img-row"><img src="img/package 4.jpg"></div>
+                                <div class="info-row">
+                                    <div class="info-row-h1">
+                                        <h1>Custom Package</h1>
+                                    </div>
+                                    <div class="info-row-p">
+                                        <p>Dietary requiremenrs and Allergies.<br> Customers must contact the company to arrange any custom packages.</p>
+                                    </div>
+                                    <a href="#" class="btn">START COOKING</a>
+                                </div>
+                            </div>
+                        </div>
+</section>
+
+<!---Call To Action-->
+<section class="cta">
+    <h1>Delicious ingredients you'll love to eat<br>
+        Simple recipes you'll live to cook.
+</p></h1>
+    <a href="sign up.html" class="hero_btn">GET STARTED</a>
+</section>
+
+
+    <!---Footer--->
+    <section class="footer">
+        <p>By David Theodore Ochieng</p>
+        <p class="copyright-text">
+            &copy; Copyright <strong>In A Box</strong>. All Rights Reserved
+        </p>
+    </section>
+
+
+    <!---Arrow--->
+    <section class="arrow">
+        <div class="arrow">
+            <a href="#banner"><img src="img/arrow.png" alt="up_arrow"></a>
+        </div>
+    </section>
+
+   <!--Javascript for Side Navbar-->
+   <Script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px"
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "img/close-line.png";
+        }
+        else {
+            sideNav.style.right = "-250px";
+            menu.src = "img/menu-line.png";
+           
+        }
+    }
+</script>
+
+
+</body>
+</html>

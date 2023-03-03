@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---==Title===------------>
+    <title>About Us</title>
+    
+    <!---==Stykesheet===------->
+    <link rel="stylesheet" href="about.css">
+
+    <!--==Shortcut Icon===-->
+    <link rel="shortcut icon" href="img/Logo.png">
+
+    <!---==Using Google Fonts===------->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+
+    <!--==Using Remix Icons===-------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+   
+</head>
+<body>
+
+  <!----==Banner Section===---->
+  <section id="banner">
+    <div class="banner_img">
+         <img src="/img/slider 1.jpg" id="bannerImg">
+    </div>
+
+    <!---logo----------->
+    <a href="index.html"><img src="img/Logo.png" class="logo"></a>
+    
+    <!--Page Header----->
+    <div class="banner-text">
+        <h1>About Us</h1> 
+    </div>
+ </section>
+
+ <!--Side Navigation----->
+ <section>
+     <!--menu----------->
+     <div id="sideNav">
+         <nav>
+             <ul>
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="index.html#features">FEATURES</a></li>
+                 <li><a href="index.html#services">SERVICES</a></li>
+                 <li><a href="packages.html">PACKAGES</a></li>
+                 <li><a href="index.html#testimonials">TESTIMONIALS</a></li>
+                 <li><a href="contact.html">CONTACT US</a></li>
+             </ul>
+         </nav>
+     </div>
+     <div id="menuBtn">
+        <img src="img/menu-line.png" id="menu">
+     </div>
+ </section>
+    
+ <!---==About Us Section===---->
+ <section class="about" id="about">
+    <h1 class="title">About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Id pariatur rerum ut! Soluta odit voluptas vel officiis at! Dolor pariatur, nisi est blanditiis placeat ad labore.
+         Repellat laudantium omnis mollitia dolores! Nulla quam cum corrupti?</p>
+         <i class="img"><img src="img/facebook (1).png" alt="image"></i>
+         <i class="img"><img src="img/instagram.png" alt="image"></i>
+         <i class="img"><img src="img/twitter.png" alt="image"></i>
+         <i class="ri-messenger-fill" id="messenger"></i>
+</section>
+   
+
+<!---==Our Team===--->
+<section class="team" id="team">
+<div class="team-container">
+    <div class="container-title">
+        <h1 class="title">Meet The Team</h1>
+    </div>
+    <div class="card">
+        <div class="content">
+            <div class="image">
+                <img src="img/team 1.jpg" alt="">
+            </div>
+            <div class="contentBx">
+                <h4>Marcela Olivia</h4>
+                <h5>Web Designer</h5>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                <a href="#"><i class="ri-instagram-fill" aria-hidden="true"></i></a>
+                <a href="#"><i class="ri-twitter-fill" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="content">
+            <div class="image">
+                <img src="img/team 2.jpg" alt="">
+            </div>
+            <div class="contentBx">
+                <h4>Kyle Brown</h4>
+                <h5>Senior Developer</h5>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                <a href="#"><i class="ri-instagram-fill" aria-hidden="true"></i></a>
+                <a href="#"><i class="ri-twitter-fill" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="content">
+            <div class="image">
+                <img src="img/team 3.jpg" alt="">
+            </div>
+            <div class="contentBx">
+                <h4>James Gordon</h4>
+                <h5>UI/UX Designer</h5>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                <a href="#"><i class="ri-instagram-fill" aria-hidden="true"></i></a>
+                <a href="#"><i class="ri-twitter-fill" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="content">
+            <div class="image">
+                <img src="img/team 4.jpg" alt="">
+            </div>
+            <div class="contentBx">
+                <h4>Ann Brown</h4>
+                <h5>Director General</h5>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                <a href="#"><i class="ri-instagram-fill" aria-hidden="true"></i></a>
+                <a href="#"><i class="ri-twitter-fill" aria-hidden="true"></i></a>
+            </div>
+        </div>
+</div>
+</section> 
+
+      <!--==Javascript for Side Navbar===-->
+   <Script>
+    var menu = document.getElementById("menu")
+    var sideNav = document.getElementById("sideNav")
+
+    sideNav.style.right = "-250px"
+
+    menu.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "img/close-line.png";
+        }
+        else {
+            sideNav.style.right = "-250px";
+            menu.src = "img/menu-line.png";
+           
+        }
+    }
+</Script>
+
+
+
+</body>
+</html>
